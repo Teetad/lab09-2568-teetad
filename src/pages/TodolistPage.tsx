@@ -45,7 +45,7 @@ function App() {
     setTasks(newTasks);
   };
 
-  const Alltask = tasks.length;
+  const Alltask = tasks.length; 
   const Donetask = tasks.filter((checkDone) => checkDone.isDone == true).length;
 
   return (
