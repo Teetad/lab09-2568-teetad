@@ -45,11 +45,14 @@ function App() {
     setTasks(newTasks);
   };
 
+  const Alltask = tasks.length;
+  const Donetask = tasks.filter((checkDone) => checkDone.isDone == true).length;
+
   return (
     <div className="col-12 m-2 p-0">
       <div className="container text-center">
         <h2>Todo List</h2>
-        <span className="m-2">All : () Done : ()</span>
+        <span className="m-2">All : ({Alltask}) Done : ({Donetask})</span>
         {/* Modal Component */}
         <button
           type="button"
